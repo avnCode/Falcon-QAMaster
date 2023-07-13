@@ -1,0 +1,33 @@
+{
+  "_name_or_path": "tiiuae/falcon-7b",
+  "alibi": false,
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "RWForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "tiiuae/falcon-7b--configuration_falcon.FalconConfig",
+    "AutoModel": "tiiuae/falcon-7b--modeling_falcon.FalconModel",
+    "AutoModelForCausalLM": "tiiuae/falcon-7b--modeling_falcon.FalconForCausalLM",
+    "AutoModelForQuestionAnswering": "tiiuae/falcon-7b--modeling_falcon.FalconForQuestionAnswering",
+    "AutoModelForSequenceClassification": "tiiuae/falcon-7b--modeling_falcon.FalconForSequenceClassification",
+    "AutoModelForTokenClassification": "tiiuae/falcon-7b--modeling_falcon.FalconForTokenClassification"
+  },
+  "bias": false,
+  "bos_token_id": 11,
+  "eos_token_id": 11,
+  "hidden_dropout": 0.0,
+  "hidden_size": 4544,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "RefinedWebModel",
+  "multi_query": true,
+  "n_head": 71,
+  "n_layer": 32,
+  "parallel_attn": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.30.0.dev0",
+  "use_cache": true,
+  "vocab_size": 65024
+}
