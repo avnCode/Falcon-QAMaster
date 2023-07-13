@@ -3,7 +3,7 @@
   "alibi": false,
   "apply_residual_connection_post_layernorm": false,
   "architectures": [
-    "RWForCausalLM"
+    "FalconForCausalLM"
   ],
   "attention_dropout": 0.0,
   "auto_map": {
@@ -21,10 +21,11 @@
   "hidden_size": 4544,
   "initializer_range": 0.02,
   "layer_norm_epsilon": 1e-05,
-  "model_type": "RefinedWebModel",
+  "model_type": "falcon",
   "multi_query": true,
-  "n_head": 71,
-  "n_layer": 32,
+  "new_decoder_architecture": false,
+  "num_attention_heads": 71,
+  "num_hidden_layers": 32,
   "parallel_attn": true,
   "torch_dtype": "bfloat16",
   "transformers_version": "4.30.0.dev0",
