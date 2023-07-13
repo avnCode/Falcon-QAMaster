@@ -14,7 +14,7 @@
     "AutoModelForSequenceClassification": "tiiuae/falcon-7b--modeling_falcon.FalconForSequenceClassification",
     "AutoModelForTokenClassification": "tiiuae/falcon-7b--modeling_falcon.FalconForTokenClassification"
   },
-  "bias": false,
+  "bias": "none",
   "bos_token_id": 11,
   "eos_token_id": 11,
   "hidden_dropout": 0.0,
@@ -30,5 +30,23 @@
   "torch_dtype": "bfloat16",
   "transformers_version": "4.30.0.dev0",
   "use_cache": true,
-  "vocab_size": 65024
+  "vocab_size": 65024,
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_lora_weights": true,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "modules_to_save": null,
+  "peft_type": "LORA",
+  "r": 64,
+  "revision": null,
+  "target_modules": [
+    "query_key_value",
+    "dense",
+    "dense_h_to_4h",
+    "dense_4h_to_h"
+  ],
+  "task_type": "CAUSAL_LM"
 }
